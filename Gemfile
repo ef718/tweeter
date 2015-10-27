@@ -45,6 +45,7 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'pry-rails'
   gem 'pry-stack_explorer'
+  gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'launchy'
