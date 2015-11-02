@@ -1,6 +1,11 @@
 %h1 Welcome#index
 %p Find me in app/views/welcome/index.html.haml
 
-= simple_form_for :username, url: '#' do |f|
-  = f.input :search
-  = f.button :submit
+= form_tag("/search", method: "get") do
+  = label_tag(:q, "Search for Username")
+  = text_field_tag(:q)
+  = submit_tag("Search")
+
+/ = simple_form_for :username, url: '/search' do |f|
+/   = f.input :search
+/   = f.button :submit
