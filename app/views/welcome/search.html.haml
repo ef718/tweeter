@@ -1,2 +1,7 @@
 %h1 Results
 %p= @search_terms
+
+%section#tweets
+  %ul
+    - @tweets.each do |tweet|
+      %li= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}"
