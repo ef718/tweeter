@@ -16,4 +16,4 @@
 /tmp
 
 # Ignore Twitter access token file
-/initializers/twitter_credentials.rb
+/config/initializers/twitter_credentials.rb
