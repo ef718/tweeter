@@ -52,6 +52,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'simplecov'
+  gem 'dotenv-rails'
 end
 
 gem 'devise'
