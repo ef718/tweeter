@@ -1,7 +1,7 @@
 %h1 Results
-%p= @search_terms
+%h2= link_to @search_terms, "https://www.twitter.com/#{@search_terms}"
 
 %section#tweets
   %ul
     - @tweets.each do |tweet|
-      %li= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}"
+      %li= tweet.text
