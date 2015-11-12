@@ -15,5 +15,4 @@
 /log/*.log
 /tmp
 
-# Ignore Twitter access token file
-/config/initializers/twitter_credentials.rb
+.env
