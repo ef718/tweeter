@@ -4,4 +4,4 @@
 %section#tweets
   %ul
     - @tweets.each do |tweet|
-      %li= tweet.text
+      %li= parsed_tweet(tweet)
