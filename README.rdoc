@@ -1,3 +1,5 @@
 == tweeter
 
-Tweeter allows you to search for tweets made on Twitter. So far, it does not do anything else...
+Tweeter allows you to search for tweets made on Twitter.
+
+So far, it does not do anything else...
