@@ -1,7 +1,9 @@
-%h1 Results
-%h2= link_to @search_terms, "https://www.twitter.com/#{@search_terms}", target: '_blank'
-
-%section#tweets
-  %ul
-    - @tweets.each do |tweet|
-      %li= parsed_tweet(tweet)
+.container-fluid.main
+  .row
+    .col-xs-12
+      %h1 Results:
+      %h2= link_to @search_terms, "https://www.twitter.com/#{@search_terms}", target: '_blank'
+      %section#tweets
+        %ul
+          - @tweets.each do |tweet|
+            %li= parsed_tweet(tweet)

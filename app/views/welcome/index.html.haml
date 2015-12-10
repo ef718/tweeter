@@ -1,6 +1,11 @@
-%h1 Twitter User Search
+.container-fluid.main
+  .row
+    .col-xs-12
+      %h1 Twitter User Search
 
-= form_tag("/search", method: "get") do
-  = label_tag(:q, "Search for Username")
-  = text_field_tag(:q)
-  = submit_tag("Search")
+  .row
+    .col-xs-12
+      = form_tag("/search", method: "get") do
+        = label_tag(:q, "Search for a Username:")
+        = text_field_tag(:q)
+        = submit_tag("Search")
