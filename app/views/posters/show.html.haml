@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Username:
+  = @poster.username
+%p
+  %b User:
+  = @poster.user
+
+= link_to 'Edit', edit_poster_path(@poster)
+\|
+= link_to 'Back', posters_path

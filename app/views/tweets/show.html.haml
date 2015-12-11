@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Body:
+  = @tweet.body
+%p
+  %b Author:
+  = @tweet.author
+%p
+  %b User:
+  = @tweet.user
+
+= link_to 'Edit', edit_tweet_path(@tweet)
+\|
+= link_to 'Back', tweets_path

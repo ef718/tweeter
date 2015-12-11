@@ -1,0 +1,23 @@
+%h1 Listing posters
+
+%table
+  %thead
+    %tr
+      %th Username
+      %th User
+      %th
+      %th
+      %th
+
+  %tbody
+    - @posters.each do |poster|
+      %tr
+        %td= poster.username
+        %td= poster.user
+        %td= link_to 'Show', poster
+        %td= link_to 'Edit', edit_poster_path(poster)
+        %td= link_to 'Destroy', poster, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Poster', new_poster_path

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tweets
+  resources :posters
   get 'welcome/index'
 
   devise_for :users
@@ -9,6 +11,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/search' => 'welcome#search'
+
+  resources :users do
+    resources :tweeters
+    resources :tweets
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
