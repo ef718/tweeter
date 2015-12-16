@@ -7,5 +7,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    = render partial: 'login'
+    %ul.hmenu
+      = render partial: 'devise/registration_items'
+      = render partial: 'devise/login_items'
     = yield
